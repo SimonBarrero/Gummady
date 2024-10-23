@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruta: Guama</title>
+    <style>
+        /* Fondo gradiente animado */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #1b5e20, #388E3C, #76ff03);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Animación del fondo */
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Encabezado con sombra */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Secciones con contenedor centrado y máximo ancho */
+        section {
+            padding: 2rem;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilo y animación de la imagen principal */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto hover en las imágenes */
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Flexbox para la distribución de imágenes de variedades */
+        .variedades {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .variedad {
+            text-align: center;
+            max-width: 200px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .variedad img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Efecto hover para variedades */
+        .variedad:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botón interactivo */
+        .boton {
+            display: inline-block;
+            background-color: #76ff03;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 25px;
+            margin: 20px 0;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efecto hover para el botón */
+        .boton:hover {
+            background-color: #00e676;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="/mnt/data/Logo producto.png" alt="GUMMADY Logo" style="width: 100%; height: auto;">
+</header>
+
+<section>
+    <img src="https://example.com/fotoGuama.jpg">
+    
+    <h2>Descripción</h2>
+    <p>La guama, también conocida como inga o pacae, es una fruta tropical proveniente de un árbol de la familia de las leguminosas. 
+       Su vaina larga y verde contiene una pulpa blanca, suave y dulce que envuelve sus semillas. 
+       Es una fruta exótica, apreciada por su sabor y textura únicos.</p>
+
+    <h2>¿Dónde se cosecha?</h2>
+    <img src="https://example.com/cosecha.jpg" alt="Imagen de la cosecha de guama" style="float:right; max-width: 300px; margin-left: 20px;">
+    <p>La guama se cultiva principalmente en las regiones tropicales de América Central y América del Sur, 
+       especialmente en países como Colombia, Perú, Ecuador, Venezuela, y Brasil. Se encuentra también en México y algunas partes de las Antillas.</p>
+
+    <h3>Lugares en Colombia donde más se cosecha la guama</h3>
+    <p>En Colombia, la guama se cosecha principalmente en regiones cálidas y húmedas. Algunas de las zonas más importantes de producción son:</p>
+    <ul>
+        <li><strong>Cundinamarca</strong>: Zona reconocida por su cultivo de guama, especialmente en los alrededores de la región de Santa Fe.</li>
+        <li><strong>Valle del Cauca</strong>: Uno de los departamentos con alta producción debido a su clima favorable.</li>
+        <li><strong>Tolima</strong>: También se destaca por sus áreas fértiles que permiten el cultivo extensivo de guama.</li>
+    </ul>
+    <img src="https://example.com/guama-colombia.jpg" alt="Zonas de cultivo de guama en Colombia" style="display:block; margin:20px auto; max-width:400px;">
+    
+    <h2>Variedades populares</h2>
+    <p>Existen diversas variedades de guama, algunas de las más conocidas incluyen la guama "mansa" (que es más dulce y suave) y la guama "brava" (de sabor más fuerte y menos común).</p>
+
+    <!-- Sección de imágenes de variedades -->
+    <div class="variedades">
+        <div class="variedad">
+            <img src="https://example.com/variedad-mansa.jpg" alt="Guama Mansa">
+            <p>Guama Mansa</p>
+        </div>
+        <div class="variedad">
+            <img src="https://example.com/variedad-brava.jpg" alt="Guama Brava">
+            <p>Guama Brava</p>
+        </div>
+        <div class="variedad">
+            <img src="https://example.com/variedad-amazonica.jpg" alt="Guama Amazónica">
+            <p>Guama Amazónica</p>
+        </div>
+    </div>
+
+    <!-- Botón de acción -->
+    <a href="#" class="boton">Explora más sobre la Guama</a>
+
+</section>
+
+</body>
+</html>

@@ -5,63 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gummady</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcfae5;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            background-color: #e6d299;
-            color: black;
-            box-shadow: 800 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            width: 10%;
-            height: auto;
-            margin-right: 650px; /* Espacio entre la imagen y el título */
-        }
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #e5d195;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #2e7d32;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        .benefits {
-            list-style-type: square;
-            margin-left: 20px;
-        }
-    </style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fcfae5;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    header {
+    	display: flex;
+    	justify-content: space-between; /* Espacio entre los elementos: botones a la izquierda, logo a la derecha */
+    	align-items: center;
+    	padding: 20px;
+    	background-color: #e6d299;
+    	color: black;
+    	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .menu {
+    	display: flex;
+    	gap: 10px; /* Espacio entre los botones */
+    }
+    header img {
+    	width: 10%;
+    	height: auto;
+    }
+    section {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 800px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #e5d195;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #2e7d32;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    /* Estilos para los botones */
+    /* Estilos para los botones */
+    .table-button {
+    	display: inline-block;
+    	padding: 10px 0; /* Mantener el alto consistente */
+    	margin: 10px; /* Separación entre los botones */
+    	background-color: #b29f83; /* Color de fondo del botón */
+    	color: black; /* Color del texto del botón */
+    	text-decoration: none;
+    	border-radius: 5px; /* Bordes redondeados */
+    	min-width: 150px; /* Ancho mínimo para todos los botones */
+    	text-align: center; /* Centrar texto en los botones */
+    	transition: background-color 0.3s ease; /* Efecto de transición */
+    }
+    .table-button:hover {
+    	background-color: #d59976; /* Cambio de color al pasar el cursor */
+    }
+
+</style>
 </head>
 <body>
  
     <header>
         <img src="D:\GUAMITAS\Logo producto.png" alt="Logo producto">
         <h1>GUAMITAS</h1>
+	<td>
+		<div><a href="identidades_reciprocas.html" class="table-button">¿Quienes Somos?</a></div>
+       		<div><a href="identidades_pitagoricas.html" class="table-button">Nuestro producto</a></div>
+		<div><a href="identidades_pitagoricas.html" class="table-button">Contacto</a></div>
+		<div><a href="identidades_pitagoricas.html" class="table-button">Inicio</a></div>
+	</td>
     </header>
     <main>
         <section>
@@ -112,7 +137,7 @@
         
         <!-- Póster al final de la página -->
         <center>
-            <iframe width="1280" height="960" frameborder="0" img src="D:\GUAMITAS\Copia de Poster.pdf;"></iframe>
+            <iframe width="1280" height="960" frameborder="0" src="https://www.canva.com/design/DAGUMiGQA_4/V2jJIPYLQHvgLo4qhf0BPQ/edit?utm_content=DAGUMiGQA_4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></iframe>
         </center>
     </main>
     <footer>
